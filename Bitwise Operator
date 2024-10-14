@@ -1,0 +1,35 @@
+package Bitwise;
+
+import java.util.Scanner;
+
+public class Bitwise {
+
+	public static void main(String[] args) {
+		
+		Scanner bit = new Scanner (System.in);
+		
+		System.out.println("Enter A First Number: ");
+		int a = bit.nextInt();
+		
+		System.out.println("Enter A First Number: ");
+		int b = bit.nextInt();
+		
+		int c = (a & b);
+			System.out.println("The AND (&) value for: " + c);
+			//System.out.println("The First value for: " + a);
+			//System.out.println("The First value for: " + b);
+			
+		 c = (a | b);
+			System.out.println("The  OR (|) value for: " + c);
+			//System.out.println("The First value for: " + a);
+			//System.out.println("The First value for: " + b);
+		
+		c = (a ^ b);
+			System.out.println("The XOR (^) value for: " + c);
+			//System.out.println("The First value for: " + a);
+			//System.out.println("The First value for: " + b);
+		
+
+	}
+
+}

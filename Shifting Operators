@@ -1,0 +1,26 @@
+// << Left Shift Method
+// >> Right Shift Method
+// >>> Right Shift zero Filling Method
+
+package shiftoperator;
+
+import java.util.Scanner;
+
+public class Left_Right_Shift {
+
+	public static void main(String[] args) {
+		
+		Scanner shift = new Scanner(System.in);
+		
+		System.out.println("Enter a Number: ");
+		int RL = shift.nextInt();
+		
+		System.out.println("Left Shifting value: " +(RL<<1));
+		
+		System.out.println("Right Shifting value: " + (RL>>1));
+		
+		System.out.println("Right Shifting value Zero_Filling: " + (RL>>>1));
+		
+	}
+
+}

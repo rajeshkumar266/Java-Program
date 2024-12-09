@@ -1,0 +1,73 @@
+ 			
+//!------------------Over Loading With & Without Object Creation Method -----------------------------------------------
+				
+//!-----------------Constructor OverLoading With & Without Object Creation Method !------------------------------------
+
+package overLoading;
+import java.util.*;
+public class OverLoading {
+	int a,b;
+	char c,d;
+	char A,B;
+	
+	 int First()    // Without OverLoading Mathod
+	{
+		return a>b?a:b;
+	}
+	
+	int Second(int a, int b)   // Two Argument Passing
+	{
+		return (a>b)&&(a<b)?a:b;
+	}
+	
+	static double Third(int a, int b,int c)  //Three Arguments Passing & Without Object
+	{
+		return (a>b)&&(a<b)?b:c;
+	}
+	
+	static char Fourth(char a,char b)   //Static Method Without Object
+	{
+		return a>b?a:b;
+		
+	}
+	
+	static int OverLoading(int a,int b)    //Constructor OverLoading With Arguments Passing
+	{
+		int F = a*b;
+		return F;
+	}
+	
+	 double OverLoading(double a,double b)  ////Constructor OverLoading With Arguments Passing
+	{
+		double F = a+b;
+		return F;	
+	}
+	 
+	   char OverLoading(char A,char B)    //Constructor  With Arguments Passing
+		{
+			return A>B?A:B;
+		}
+	   
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		OverLoading ov = new OverLoading();
+		
+		OverLoading ov1 = new OverLoading();
+		System.out.println("Constructor int Value & With Object: " + ov1.OverLoading('X','L'));
+		
+		System.out.println("Double Value & With Object: " + ov.OverLoading(5.5, 2.8));
+		
+		System.out.println("Calling Method & Without Arguments :" + OverLoading(4,8));
+		
+		System.out.println("Without Arguments");
+		System.out.println(ov.Second(5,9));
+		
+		System.out.println(Third(5,9,11));
+		System.out.println(Fourth('A','K'));
+	
+		
+		//OverLoading ov1 = new OverLoading(7,5);
+	}
+
+}

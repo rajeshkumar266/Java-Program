@@ -1,0 +1,42 @@
+
+//----------------------------|  Call by Values & References  |--------------------------------------------------------
+
+package callby_value_Reference;
+
+public class callby_value_Ref {
+		
+	 static void Addting(int a)
+	{
+		++a;
+	}
+     
+	 int Sub(int a,int b)
+	 {
+		  int c = a * b;
+		  return c;
+	 }
+	 
+	  int box(int d)
+		{
+			--d;
+			return d;
+		}
+
+	
+	public static void main(String [] args)
+	{
+		int a=10,b=8,d=7;
+		Addting(a);
+		
+		callby_value_Ref RV = new callby_value_Ref();
+		callby_value_Ref RV1 = new callby_value_Ref();
+		System.out.println("Call By Value For : " + a + "\n");
+		
+		System.out.println("Call By Value For : " + RV.Sub(5, 10) + "\n");
+		
+		RV1.box(RV.Sub(5, 8));
+		System.out.println("Call By Reference : " + RV.box(d));
+		
+	}
+
+}

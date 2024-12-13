@@ -1,0 +1,41 @@
+
+//**************************| Factorial Method & Recursion Method | ************************************
+//**************************| With Object & Without Object        | ************************************
+
+package RecersionMethod;
+
+import java.util.Scanner;
+public class Recersion {
+
+	Scanner sc = new Scanner(System.in);
+	
+	 int n=sc.nextInt();	 
+	 int fact(int n)
+	{
+		if (n==0)
+			return 1;
+		else
+			return n*fact(n-1);
+	}
+	 
+	
+	 static int Recs(int v)
+		{
+			if (v==0)
+				return 1;
+			else
+				return v*Recs(v-1);
+		}
+	
+	public static void main(String[] args) {
+		
+		int v=7;                                                                 // Without Object Creation
+		System.out.println("Convert to factorial ");
+		System.out.println("Without obj creation : " + Recs(v) + "\n");
+		
+		Recersion RC = new Recersion();                                          // With Object Creation
+		System.out.println("Convert to factorial");
+		System.out.println(" With obj Creation   : " + RC.fact(RC.n));
+	}
+
+}

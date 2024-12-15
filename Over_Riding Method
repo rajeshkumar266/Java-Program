@@ -1,0 +1,25 @@
+package OverRiding_method;
+
+//######################################| Over_Riding Method using obj creation |################################
+public class Overriding {
+
+    static class Parent {
+
+        void parent1() {
+            System.out.println("This is my father");
+        }
+    }
+
+    static class Child extends Parent {
+
+        void ychild() {
+            System.out.println("It's My Son");
+        }
+    }
+
+    public static void main(String[] args) {
+        Child ch = new Child();
+        ch.parent1();
+        ch.ychild();
+    }
+}

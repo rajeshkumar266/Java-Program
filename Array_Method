@@ -1,0 +1,34 @@
+package array_method;
+
+import java.util.Scanner;
+
+public class Array_method {
+
+	public static void main(String[] args) {
+
+		
+		Scanner Sc = new Scanner(System.in);
+		
+		System.out.println("Enter A arr value: ");
+		int ele = Sc.nextInt();
+		
+		int ele1[] = new int[ele];
+		
+		for( int i=0;i<ele;i++)
+		{
+			System.out.println("Array Element : " );
+			ele1[i] = Sc.nextInt();
+		}
+		
+		for(int i=0;i<ele1.length;i++) 
+			{
+			System.out.println("Array element for "+i +":"+ ele1[i]);
+			}
+		
+		
+		
+		
+
+	}
+
+}

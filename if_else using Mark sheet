@@ -1,0 +1,85 @@
+package if_else_;
+
+import java.util.Scanner;
+public class if_else_ {
+	
+
+
+			public static void main(String[] args) {
+				
+				Scanner sc = new Scanner(System.in);
+				
+				System.out.println("Enter A Tamil mark: ");
+				int tam = sc.nextInt();
+				
+				System.out.println("Enter A English mark: ");
+				int eng = sc.nextInt();
+				
+				System.out.println("Enter A Maths mark: ");
+				int mat = sc.nextInt();
+				
+				System.out.println("Enter A Science mark: ");
+				int sci = sc.nextInt();
+				
+				System.out.println("Enter A Social mark: ");
+				int soc = sc.nextInt();
+				
+				//below 35 To Execute this code
+				
+				 if(tam<=35 || eng<=35 || mat<=35 || sci<=35 || soc<=35)
+				{
+					System.out.println("Sorry,You Have Fail In the Exam " + "\n");
+				}
+				
+				
+					
+				//All Pass Exam And 
+				else 
+				{	
+					int tot = tam + eng + mat + sci + soc;
+					
+					System.out.println("\n Total marks For       : " + tot);
+					
+					int avg = tot/5;
+					System.out.println ("\n Average Total For     : " + avg );
+					
+					//System.out.println("\n Enter Your Average to converted Grade ");
+					//tot = sc.nextInt();
+					
+					if (avg >= 90)
+					{
+						System.out.println( "\n your Grade For A :" + avg );
+						System.out.println("Excellent");
+					}
+					else if (avg >= 80)
+					{
+						System.out.println( "\n your Grade For B :" + avg);
+						System.out.println("very Good");
+					}
+					else if (avg >= 70)
+					{
+						System.out.println( "\n your Grade For C :" + avg);
+						System.out.println("Good");
+					}
+					else if (avg >= 60)
+					{
+						System.out.println("\n your Grade For D  :" + avg);
+						System.out.println("Improve");
+					}
+					else if (avg >= 50)
+					{
+						System.out.println("\n your Grade For E :" + avg);
+						System.out.println("more Improve");
+					}
+				
+					else
+					{
+						System.out.println("\n Just Pass in The Exam: "+ avg);
+					}
+					
+					
+					}	
+				
+			}
+
+		}

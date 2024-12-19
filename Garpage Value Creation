@@ -1,0 +1,46 @@
+package garpageValue;
+
+import java.util.Scanner;
+public class Garpage {
+
+	int length;
+	int breath;
+	int height;
+	
+	void Garpage(int l,int b,int h)
+	{
+		length = l;
+		breath = b;
+		height = h;
+	}
+	
+	void Set_data() 
+	{
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter A Length: ");
+		int l=sc.nextInt();
+		System.out.println("Enter A Length: ");
+		int b=sc.nextInt();
+		System.out.println("Enter A Length: ");
+		int h=sc.nextInt();
+		
+		 int box=l*b*h;
+		 int box1 = l + b + h;
+		System.out.println(box);
+		System.out.println(box1);
+	}
+	
+	void Display_data()
+	{
+		System.out.println("Box Multiple: ");
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Garpage g1 = new Garpage();
+		
+		int l,b,h;
+		g1.Set_data();
+		g1.Garpage(7,8,5);
+	}
+
+}

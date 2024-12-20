@@ -1,0 +1,38 @@
+package invoke_Method;
+
+import java.util.Scanner;
+public class student_Mark {
+
+	static void mark()
+	{
+		int arr[]= new int[10];
+		
+		Scanner s= new Scanner(System.in);
+		System.out.println("Enter A Student Marks Counts: ");
+		int n = s.nextInt();
+		for(int i=0;i<n;i++)
+		{
+			Scanner sc = new Scanner(System.in);
+			
+			System.out.println("Enter Your name: ");
+			String name = sc.next();
+			sc.nextLine();
+			System.out.println("Enter Ypur Roll_No: ");
+			int Rollno = sc.nextInt();
+			sc.nextLine();
+			System.out.println("Enter Ypur Marks: ");
+			int mark = sc.nextInt();
+			System.out.println("Your Mark for: "+ mark);
+			System.out.println("\n");
+		}
+		
+	}
+	public static void main(String[]args)
+	{
+		student_Mark one = new student_Mark();
+		student_Mark.mark();
+		
+		
+		
+	}
+}

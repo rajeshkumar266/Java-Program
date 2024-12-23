@@ -1,0 +1,42 @@
+package Abstract_method;
+
+abstract class Parent_math {
+	
+	abstract void add();
+	abstract void sub();
+	abstract void mul();
+	void divi()
+	{
+		System.out.println("this is Division");
+	}
+}
+
+public class son_math extends Parent_math {
+	void add() {
+		System.out.println("this is add");
+	}
+	void sub() {
+		System.out.println("this is sub");
+	}
+	void mul() {
+		System.out.println("this is mul");
+	}
+	void divi()
+	{
+		System.out.println("this is Division 2");
+	}
+	void test()
+	{
+		System.out.println("this is test");
+	}
+	
+	public static void main(String args[])
+	{
+		son_math obj = new son_math();
+		obj.add();
+		obj.sub();
+		obj.mul();
+		obj.divi();
+		obj.test();
+	}
+}

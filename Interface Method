@@ -1,0 +1,76 @@
+
+// *************************** |  Interface Method |***************************************************
+// *************************** |  Interface using keyword implements |*********************************
+// *************************** |  Interface different class using single class |***********************
+// *************************** |  Interface using implement used to public keyword used |**************
+// *************************** |  not using Interface method in other class used |*********************
+
+package Interface;
+
+public interface inter_meth {
+	
+	void add();
+	void sub();
+	void mul();
+	void divi();
+}
+
+interface inter_meth1{
+	int mod(int a,int b);
+	void  add2();
+	int add(int a,int b,int c);
+}
+
+
+class inter2 implements inter_meth,inter_meth1{   // class 1, class 2
+	
+	public void add()
+	{
+		System.out.println("this is add");
+	}
+	public void sub()
+	{
+		System.out.println("this is sub");
+	}
+	public void mul()
+	{
+		System.out.println("this is mul");
+	}
+	public void divi()
+	{
+		System.out.println("this is divi");
+	}
+	 
+	// inter_meth2 class implementation
+	public int mod(int a,int b)
+	{
+		int c=a%b;
+		System.out.println("mod is add: " + c);
+		return c;
+	}
+	public int add(int a,int b,int c) {
+		int d= a*b+c;
+		System.out.println("Add method for :" + d);
+		return d;
+	}
+     public void add2() {
+		System.out.println("this is add2 method");
+	}
+     
+     // sub2 not using this interface method
+    void sub2() {       									
+ 		System.out.println("this is sub2 method");
+ 	}
+public static void main(String [] args)
+	{
+		inter2 obj = new inter2();
+		obj.add();
+		obj.sub();
+		obj.mul();
+		obj.divi();
+		obj.add(10, 5, 10);
+		obj.mod(103, 5);
+		obj.add2();
+		obj.sub2();
+	}
+}

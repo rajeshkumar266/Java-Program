@@ -1,0 +1,38 @@
+package Static;
+
+public class Static_method {
+	
+	String  name;
+	int rollno;
+	static String college;    // keyword used
+	
+	void display() {
+		System.out.println("Your Name is :  " + name);
+		System.out.println("Your Rollno  :  " + rollno);
+		System.out.println("Your College :  " + college + "\n");
+	}
+}
+class demo{
+public static void main(String []args) {
+
+	Static_method stud = new Static_method();   //Static keyword used without obj creation
+	stud.name = "Raju";
+	stud.rollno = 22;
+	Static_method.college = "PSR";
+	
+	Static_method stud2 = new Static_method();   //Different obj creation and Static keyword used with obj create
+	stud2.name = "sundar";
+	stud2.rollno = 23;
+	stud2.college = "PACR";
+	
+	Static_method stud3 = new Static_method();
+	stud3.name = "Marees";
+	stud3.rollno = 24;
+	stud3.college = "AKDR";
+	
+	stud.display();
+	stud2.display();
+	stud3.display();
+}
+
+}

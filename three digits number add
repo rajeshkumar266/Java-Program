@@ -1,0 +1,23 @@
+
+//####################### |  All digits Add method using loop | ###########################################
+
+package Problem_sloving;
+
+import java.util.Scanner;
+public class Youtube {
+
+	public static void main(String[] args) {
+		
+	Scanner sc = new Scanner(System.in);
+	System.out.println("Enter A Digits: ");
+	int s = sc.nextInt();
+	int sum=0;
+
+	while(s>0)
+	{
+		 sum =sum+s%10;
+		 s = s/10;
+	}
+	System.out.println("Sum of Digits Values: " + sum);
+	}
+}

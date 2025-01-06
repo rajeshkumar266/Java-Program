@@ -1,0 +1,22 @@
+package Problem_sloving;
+
+import java.util.Scanner;
+public class Factor_method {
+
+	public static void main(String[] args) {
+		
+		Scanner s =new Scanner(System.in);
+		
+		int i;
+		System.out.println("Enter A value: ");
+		int n = s.nextInt();
+		
+		for(i=1;i<=n/2;i++)
+		{
+			if(n%i==0)
+				System.out.println("i value for" + i);
+		}
+		System.out.println("n value for"+ n);
+	}
+
+}

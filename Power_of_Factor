@@ -1,0 +1,21 @@
+package Problem_sloving;
+
+public class power_of_factor {
+	
+	int result=1;
+	int math(int a,int b)
+	{
+		while(b<=5) {
+			result*=a;
+			b++;
+		}
+		System.out.println("Result: "+ result);
+		return 0;
+	}
+
+	public static void main(String[] args) {
+		power_of_factor pf = new power_of_factor();
+		pf.math(5,2);
+	}
+
+}

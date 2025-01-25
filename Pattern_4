@@ -1,0 +1,29 @@
+package Patterns;
+
+public class Patt_4 {
+	
+	public void  patternA (int n)
+	{
+		for(int i=1;i<=n-1;i++) 
+		{
+			for(int j=1;j<=n-i;j++) 
+			{
+				System.out.print(" ");
+			}
+			for(int k=1;k<=i;k++) 
+			{
+				System.out.print(i);
+			}
+			System.out.print("\n");
+			
+		}
+	}
+
+	public static void main(String[] args) {
+
+		 Patt_4 pt = new  Patt_4();
+		 pt.patternA(6);
+	
+	}
+
+}

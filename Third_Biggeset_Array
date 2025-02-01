@@ -1,0 +1,14 @@
+package Arrays;
+
+import java.util.*;
+public class Arrays_Last {
+	public static void main(String[]args) {
+	int arr[] = {2,5,7,1,10,8};
+	
+	Arrays.sort(arr);
+//	System.out.println(arr);
+	System.out.println("Third Biggest Array for: " + arr[arr.length-3]+"\n"+"Second Biggest Array for: " + arr[arr.length-2]);
+	
+	}
+
+}

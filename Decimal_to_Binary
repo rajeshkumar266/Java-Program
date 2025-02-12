@@ -1,0 +1,16 @@
+package Decimal_to_Binary;
+import java.util.Scanner;
+public class D2B {
+	
+	public static void main(String[]args) {
+	Scanner s = new Scanner(System.in);
+	
+	System.out.println("Enter A Decimal Number: ");
+	int n = s.nextInt();
+	
+	String bin = Integer.toBinaryString(n);
+	
+	System.out.println("Decimal to binary convert: " + bin);
+	
+}
+}

@@ -1,0 +1,16 @@
+package Binary_to_Decimal;
+
+import java.util.Scanner;
+public class B2D {
+
+	public static void main(String[] args) {
+	Scanner sc = new Scanner(System.in);
+	System.out.println("Enter A Number for binary: ");
+	String n = sc.next();
+	
+	int bin = Integer.parseInt(n,2);
+	System.out.println("binary to Decimal convert: " + bin);
+
+	}
+
+}

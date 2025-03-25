@@ -1,0 +1,25 @@
+package Arrays;
+import java.util.Scanner;
+import java.util.*;
+public class user_Input {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter a No of Array: ");
+		int n =sc.nextInt();
+		int target = 3;
+		int arr[] = new int[n];
+		for(int i=0;i<n;i++) {
+			System.out.print("Enter a Array Elements: ");
+			arr[i] = sc.nextInt();
+		}
+		//Arrays.sort(arr);
+		
+		for(int i=0;i<n;i++) {
+			if(target == arr[i]) {
+				System.out.println("check target index For: "+ i);
+			}
+		}
+	}
+
+}
